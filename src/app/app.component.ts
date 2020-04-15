@@ -1,11 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+declare var VANTA;
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+export class  AppComponent implements OnInit{
   title = 'George Whiting';
   config: any;
   fullpage_api: any;
@@ -28,6 +29,19 @@ export class AppComponent {
         console.log(origin.index);
       }
     };
+  }
+
+  ngOnInit(){
+    VANTA.NET({
+    el: "#header",
+    mouseControls: true,
+    touchControls: true,
+    minHeight: 200.00,
+    minWidth: 200.00,
+    scale: 1.00,
+    scaleMobile: 1.00
+    });
+
   }
 
   getRef(fullPageRef) {
