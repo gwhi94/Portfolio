@@ -4,14 +4,40 @@
     font-family: 'Ubuntu', sans-serif;
     font-weight: 600;
 }
+
+.blue-this-light{
+    color:#3c5afd;
+}
+
+.blue-this-dark{
+    color:#2a48cd;
+}
+
+.blue-this-darker{
+    color:#001b4d
+}
+
+.dark-btn{
+    background-color:#001b4d !important;
+    border:0 !important;
+}
+.transparent-btn{
+    background-color: transparent !important;
+    border-color: white !important;
+}
+
+//light blue #3c5afd
+//dark blue #2a48cd
+//even darker blue #001b4d
+
+
+
 #header{
-    //background-color: #4759BC;
+    
 }
 #about {
-    background-color: #9688AF;
-
     .about-icons {
-        height: 100px;
+        height: 50px;
         img {
             max-height: 100%;
         }
@@ -31,6 +57,9 @@
 .header{
     font-size:75px;
 }
+.jumbo-header{
+    font-size: 100px;
+}
 .content{
     font-size: 20px;
 }
@@ -40,7 +69,7 @@
 }
 
 .dark {
-    color:#1b1b1b
+    color:#23153c
 }
 .tag{
     color:#212121;
