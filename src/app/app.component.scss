@@ -1,0 +1,70 @@
+@import "../variables.scss";
+
+.uk-card{
+    border-radius: 15px;
+}
+.uk-card-pill{
+    background-color:$blue-light;;
+    padding:4px;
+    /* border:2px solid $blue-dark; */
+    color:white;
+}
+
+.uk-card-projects{
+    border:2px solid $blue-dark;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.clean-code-card {
+    background-color: $blue-dark;
+    min-height: 280px;
+    h3{
+        color:white;
+    }
+    ul {
+        li {
+            color: white;
+        }
+    }
+}
+
+.communication-card{
+    background-color: $blue-medium;
+    min-height: 280px;
+    h3{
+        color:white;
+    }
+    ul {
+        li {
+            color: white;
+        }
+    }
+}
+
+.freindly-card{
+    background-color: $blue-medium;
+    min-height: 280px;
+    h3{
+        color:white;
+    }
+    ul {
+        li {
+            color: white;
+        }
+    }
+}
+
+.learning-card{
+    background-color: $blue-dark;
+    min-height: 280px;
+    h3{
+        color:white;
+    }
+    ul {
+        li {
+            color: white;
+        }
+    }
+}

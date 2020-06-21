@@ -11,8 +11,8 @@
           <h1 class="header light">Hello</h1>
           <h3 class="light">My name is George Whiting and I am a Front End Developer</h3>
           <p class="content grey">
-            Being a developer I have been lucky enough to have worked on some really
-            exciting projects and gaining valuable exposure to modern technologies and frameworks.  
+            Being a <span class="blue-this-darker">developer</span> I have been lucky enough to have worked on some really
+            <span class="blue-this-darker">exciting</span> projects and gaining valuable exposure to <span class="blue-this-darker">modern</span> technologies and frameworks.  
           </p>
 
           <div class="header-btn-container">
@@ -25,71 +25,167 @@
       </div>
     </div>
   </div>
-	<div class="section" id="about" (click)="fullpage_api.moveSectionDown()">
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <h1 class="jumbo-header blue-this-darker mb-4">About me</h1>
-          <h4 class="blue-this-dark mb-4">As a passionate developer I strive for </h4>
-        </div>
-      </div>
-      <div class="row mb-4">
-        <div class="col">
-          <div class="about-icons mb-2 text-center">
-            <img src="../assets/broom.svg">
-          </div>           
-          <h5 class="blue-this-light text-center">Clean Code</h5>
-        </div>
-        <div class="col">
-          <div class="about-icons mb-2 text-center">
-            <img src="../assets/comment.svg">
-          </div>
-          <h5 class="blue-this-light text-center">Good Communication</h5>           
-        </div>
-        <div class="w-100"></div>
-        <div class="col">
-          <div class="about-icons mb-2 text-center">
-            <img src="../assets/phone.svg">
-          </div>   
-          <h5 class="blue-this-light text-center">Freindly UI</h5>         
-        </div>
-        <div class="col">
-          <div class="about-icons mb-2 text-center">
-            <img src="../assets/book.svg">
-          </div>
-          <h5 class="blue-this-light text-center">Constant Learning</h5>             
-        </div>
-      </div>      
+	<div class="section" id="about">
+    <div class="uk-container">
+      <h1 class="jumbo-header blue-this-darker mb-4">As a passionate developer <br> <span class="blue-this-dark">I strive for...</span> </h1>
       
-      <div class="row">
-        <div class="col">
-      
-          <p class="dark">From implementing complex 
-            front end solutions to creating fluid animated UI to a clients specification, I have gained
-            wide ranging experience which only furthers my desire to continue learning.
-          <br>
-          <br>
-            I have learnt the values of communication and what is expected from working 
-            in a commercial environment.
-            I have learnt that being able to apply business logic to a problem is crucial
-             when you are writing code for customers and clients. 
-            <br>
-            <br>
-            I have also learnt that time should be taken to find not just 
-            the right way but the best way of tackling a technical problem and 
-            producing clean efficient code. 
-          </p>
+      <div class="uk-grid-row-large uk-child-width-1-2@m uk-text-center uk-grid-match" uk-grid>
+        <div>
+            <div class="uk-card uk-card-default uk-card-body clean-code-card">
+              <div class="about-icons mb-2">
+                <img src="../assets/broom.svg">
+              </div>  
+              <h3 class="uk-card-title uk-text-center">Clean Code</h3>
+              <ul>
+                <li class="blue-this-darker">
+                  Writing less not more.
+                </li>
+                <li class="blue-this-darker">
+                  Learning from more experienced Developers. 
+                </li>
+                <li class="blue-this-darker">
+                  Taking the time to implement the most efficient solution for the time frame.
+                </li>
+              </ul>
+            </div>
+        </div>
+        <div>
+          <div class="uk-card uk-card-default uk-card-body communication-card">
+            <div class="about-icons mb-2">
+              <img src="../assets/comment.svg">
+            </div>
+            <h3 class="uk-card-title uk-text-center">Good Communication</h3>
+            <ul>
+              <li class="blue-this-darker">
+                Keeping everyone involved in the loop.
+              </li>
+              <li class="blue-this-darker">
+                Feeback and code review. 
+              </li>
+              <li class="blue-this-darker">
+                Regular commits !
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <div class="uk-card uk-card-default uk-card-body freindly-card">
+            <div class="about-icons mb-2">
+              <img src="../assets/phone.svg">
+            </div>   
+            <h3 class="uk-card-title uk-text-center">Freindly UI</h3>
+            <ul>
+              <li class="blue-this-darker">
+                Writing code thinking as the user.
+              </li>
+              <li class="blue-this-darker">
+                Visually aiding and striking interfaces. 
+              </li>
+              <li class="blue-this-darker">
+                Mobile first always.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <div class="uk-card uk-card-default uk-card-body learning-card">
+            <div class="about-icons mb-2">
+              <img src="../assets/book.svg">
+            </div> 
+            <h3 class="uk-card-title uk-text-center">Constant Learning</h3>
+            <ul>
+              <li class="blue-this-darker">
+                Always working on personal projects.
+              </li>
+              <li class="blue-this-darker">
+                Reading up on latest trends and technologies.
+              </li>
+              <li class="blue-this-darker">
+                Webinars and courses.
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
   </div>
-  
+
+
   <div class="section" id="skills">
-		<div class="slide" id="javaScript">Slide 2.1</div>
-		<div class="slide" id="angular">Slide 2.2</div>
-    <div class="slide" id="html">Slide 2.3</div>
-    <div class="slide" id="learning">Slide 2.3</div>
-	</div>
+    <div class="slide" id="experience">
+      <div class="uk-container">
+        <h1 class="jumbo-header blue-this-darker mb-4">So what about <br> <span class="blue-this-dark">experience ?</span> </h1>    
+        <div class="uk-grid-column-small uk-grid-row-small uk-child-width-1-6@m uk-text-center" uk-grid>        
+          <div *ngFor="let langaugePill of this.languagePills">
+              <div class="uk-card uk-card-pill uk-card-body">{{langaugePill}}</div>
+          </div>       
+        </div>
+
+      <h3 class="uk-margin-large blue-this-darker">Taking what I learn on a daily basis and applying it to my own projects
+        is something I love doing.
+      </h3>
+
+      <h3 class="uk-margin-large blue-this-dark">Take a look at some of my most recent Projects.
+      </h3>
+
+      <!-- <div class="uk-grid-column-small uk-grid-row-large uk-child-width-1-2@m uk-text-center" uk-grid>
+        <div>
+            <div class="uk-card uk-card-projects uk-card-body" data-src="../assets/owl.png" uk-img>
+              <h4 class="uk-card-title">Owl - Personal finance Web App</h4>
+            </div>
+        </div>
+        <div>
+            <div class="uk-card uk-card-projects uk-card-body" data-src="../assets/game-vault.jpg" uk-img></div>
+        </div>
+        <div>
+            <div class="uk-card uk-card-default uk-card-body">JS Game</div>
+        </div>
+        <div>
+            <div class="uk-card uk-card-default uk-card-body">Resteraunt</div>
+        </div>
+    </div> -->
+
+    <div class="slide">
+      <div class="uk-container">
+        <h1 class="project-header blue-this-darker">{{this.projectOwl.title}} - <span class="blue-this-dark"> a personal finance Web App</span> </h1>    
+        <p>Angular and Google Firbase powered Web App to manage budgets.</p>
+        <div class="uk-grid-column-small uk-grid-row-small uk-child-width-1-6@m uk-text-center" uk-grid>        
+          <div *ngFor="let langaugePillProject of this.projectOwl.languagePills">
+              <div class="uk-card uk-card-pill uk-card-body">{{langaugePillProject}}</div>
+          </div>       
+        </div>
+        
+         <div class="uk-grid-column-small uk-grid-row-large uk-child-width-1-2@m uk-text-center" uk-grid>
+        <div>
+            <div class="uk-card uk-card-projects uk-card-body" data-src="../assets/owl.png" uk-img>
+              <h4 class="uk-card-title"></h4>
+            </div>
+        </div>
+        <div>
+          <div class="uk-card uk-card-projects uk-card-body" data-src="../assets/owl-2.png" uk-img>
+            <h4 class="uk-card-title"></h4>
+          </div>
+        </div>
+        <div>
+          <div class="uk-card uk-card-projects uk-card-body" data-src="../assets/owl-3.png" uk-img>
+            <h4 class="uk-card-title"></h4>
+          </div>
+        </div>
+        <div>
+          <div class="uk-card uk-card-projects uk-card-body" data-src="../assets/owl-4.png" uk-img>
+            <h4 class="uk-card-title"></h4>
+          </div>
+        </div>
+      </div>
+     
+      </div>
+    </div>
+  
+        
+
+    </div>
+  </div>
+  </div>
 
   <div class="section" id="experience"(click)="fullpage_api.moveTo('secondPage', 2)">Some section4</div>
   <div class="section" id="contact"(click)="fullpage_api.moveTo('secondPage', 2)">Some section4</div>

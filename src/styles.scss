@@ -1,4 +1,9 @@
 @import url(~fullpage.js/dist/fullpage.min.css);
+@import "../node_modules/uikit/src/scss/variables-theme.scss";
+@import "../node_modules/uikit/src/scss/mixins-theme.scss";
+@import "../node_modules/uikit/src/scss/uikit-theme.scss";
+
+@import "./variables.scss";
 
 * {
     font-family: 'Ubuntu', sans-serif;
@@ -6,15 +11,15 @@
 }
 
 .blue-this-light{
-    color:#3c5afd;
+    color:$blue-light;
 }
 
 .blue-this-dark{
-    color:#2a48cd;
+    color:$blue-medium;
 }
 
 .blue-this-darker{
-    color:#001b4d
+    color:$blue-dark;
 }
 
 .dark-btn{
@@ -29,9 +34,29 @@
 //light blue #3c5afd
 //dark blue #2a48cd
 //even darker blue #001b4d
-
-
-
+ul{
+    padding-left:0
+}
+li {
+    color:#001b4dff;
+    list-style:none;
+    position: relative;
+    line-height: 2;
+    font-size:15px;
+  }
+  
+  li:before {
+    font-family:FontAwesome;
+    position: absolute;
+    left: 0;
+    color:#2a48cd;
+    font-size:15px;
+  }
+  
+  li.one:before {
+     content:"\f111"; 
+  }
+  
 #header{
     
 }
@@ -40,15 +65,36 @@
         height: 50px;
         img {
             max-height: 100%;
+            width:50px;
         }
     }
 }
 #skills {
 
 }
-#experience{
-    background-color: #feea3b
+
+.fp-controlArrow {
+    position: absolute;
+    z-index: 4;
+    top: 50%;
+    cursor: pointer;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    margin-top: -38px;
 }
+.fp-controlArrow.fp-prev {
+    left: 15px;
+    width: 0;
+    border-width: 18.5px 18.5px 20px 0;
+    border-color: transparent $blue-dark transparent transparent;
+}
+.fp-controlArrow.fp-next {
+    right: 15px;
+    border-width: 18.5px 0 18.5px 20px;
+    border-color: transparent transparent transparent $blue-dark;
+}
+
 
 #contact {
     background-color: #4cae50;
@@ -77,4 +123,6 @@
 .grey {
     color:#bdbdbd;
 }
+
+
 

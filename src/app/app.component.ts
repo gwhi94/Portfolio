@@ -11,6 +11,13 @@ export class  AppComponent implements OnInit{
   config: any;
   fullpage_api: any;
 
+  languagePills:Array<any> = ['JavaScript', 'HTML', 'Angular','AngularJs', 'TypeScript', 'NativeScript'
+                              ,'Firebase', 'CSS/Sass','git','Cordova', 'Jasmine', 'jQuery'];
+  projectOwl:Object = {
+    title:'Owl',
+    languagePills:['Angular','HTML','CSS','Firebase']
+  }
+
   constructor() {
 
     // for more details on config options please visit fullPage.js docs
